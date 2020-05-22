@@ -22,7 +22,7 @@
   width: 200px;
   min-height: 40px;
   border-radius: 4px;
-  font-family: 'McLaren', cursive;
+  font-family: sans-serif;
   font-size: 1.2rem;
 }
 
@@ -46,7 +46,7 @@ a{
 }
 
 .menu{
-  height: 5vh;
+  height: 28px;
   background-color: #BBB;
   border-top-left-radius: 5px; 
   border-top-right-radius: 5px;

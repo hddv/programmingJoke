@@ -99,7 +99,7 @@ p{
   text-align: left;
   overflow: hidden; 
   left: 50%;
-  margin-left: -11.5em;
+  margin-left: -10.5em;
   position: relative;
   width: 0;
 }
@@ -292,25 +292,25 @@ p{
 
 @-webkit-keyframes type {
   to {
-    width: 24em;
+    width: 22em;
   }
 }
 
 @-moz-keyframes type {
   to {
-    width: 24em;
+    width: 22em;
   }
 }
 
 @-o-keyframes type {
   to {
-    width: 24em;
+    width: 22em;
   }
 }
 
 @keyframes type {
   to {
-    width: 24em;
+    width: 22em;
   }
 }
 
@@ -323,7 +323,7 @@ p{
   p{
     line-height: 1.3rem;
     font-size: 0.9rem;
-    margin-left: -10.5em;
+    margin-left: -9.5em;
   }
 
   .screen{

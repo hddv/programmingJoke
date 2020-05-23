@@ -99,7 +99,7 @@ p{
   text-align: left;
   overflow: hidden; 
   left: 50%;
-  margin-left: -8.5em;
+  margin-left: -11.5em;
   position: relative;
   width: 0;
 }
@@ -292,25 +292,25 @@ p{
 
 @-webkit-keyframes type {
   to {
-    width: 18em;
+    width: 24em;
   }
 }
 
 @-moz-keyframes type {
   to {
-    width: 18em;
+    width: 24em;
   }
 }
 
 @-o-keyframes type {
   to {
-    width: 18em;
+    width: 24em;
   }
 }
 
 @keyframes type {
   to {
-    width: 18em;
+    width: 24em;
   }
 }
 
@@ -322,19 +322,47 @@ p{
 
   p{
     line-height: 1.3rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-left: -10.5em;
   }
 
   .screen{
     height: 457px;
   }
+
+
+  @-webkit-keyframes type {
+    to {
+      width: 20em;
+    }
+  }
+  
+  @-moz-keyframes type {
+    to {
+      width: 20em;
+    }
+  }
+  
+  @-o-keyframes type {
+    to {
+      width: 20em;
+    }
+  }
+  
+  @keyframes type {
+    to {
+      width: 20em;
+    }
+  }
+
+  
 }
 
 @media only screen and (min-height: 730px){
 
   p{
     line-height: 1.4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .screen{
@@ -347,9 +375,9 @@ p{
 @media only screen and (min-height: 812px){
 
   /* p{
-    line-height: 1.5rem;
-    font-size: 1.1rem;
-  } */
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }  */
 
   .screen{
     height: 602px;
@@ -358,4 +386,6 @@ p{
   /* .customInput{
     bottom: 0;
   } */
+
+
 }

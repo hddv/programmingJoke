@@ -1,6 +1,17 @@
+body{
+  background-color:#272727;
+  color: #01ff70;
+  font-family: monospace;
+
+  margin: 0 auto;
+  min-height: 100vh;
+  max-height: 100vh;
+
+}
 
 .container{
   height: 100vh;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -15,6 +26,7 @@
   height: 100%;
   /* background-color: rgb(172, 172, 172); */
   background-color: #272727;
+  text-align: center;
 }
 
 .customInput{
@@ -29,15 +41,6 @@
 .buttonArea{
   text-align: center;
   height: 100%;
-}
-
-
-
-
-body{
-  background-color:#272727;
-  color: #01ff70;
-  font-family: monospace;
 }
 
 a{
@@ -85,28 +88,219 @@ a{
   border-bottom-left-radius: 5px; 
   border-bottom-right-radius: 5px;
   padding: 10px 30px;
+  height: 470px;
 }
 
 p{
-  line-height: 1.2rem;
+   line-height: 1.2rem;
   font-size: 1rem;
   white-space: normal;
   text-align: left;
-  overflow: hidden;
+  overflow: hidden; 
+
+  position: relative;
+  width: 0;
 }
 
-.titleCommand{
+.command{
+  /* width: 0%; */
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* animation: write-command 5s both; */
+}
+
+.line1{
   color: #9CD9F0;
+  width: 100%;
+  /* -webkit-animation: type .5s 1s steps(20, end) forwards;
+  -moz-animation: type .5s 1s steps(20, end) forwards;
+  -o-animation: type .5s 1s steps(20, end) forwards;
+  animation: type .5s 1s steps(20, end) forwards; */
 }
 
-.command1{
+.cursor1 {
+  -webkit-animation: blink 1s 1s 1 forwards;
+  -moz-animation: blink 1s 1s 1 forwards;
+  -o-animation: blink 1s 1s 1 forwards;
+  animation: blink 1s 1s 1 forwards;
+  /* -webkit-animation: blink 1s 2s 2 forwards;
+  -moz-animation: blink 1s 2s 2 forwards;
+  -o-animation: blink 1s 2s 2 forwards;
+  animation: blink 1s 2s 2 forwards; */
+}
+
+.line2{
   color: #CDE169;
+
+  -webkit-animation: type .75s 2.25s steps(20, end) forwards;
+  -moz-animation: type .75s 2.25s steps(20, end) forwards;
+  -o-animation: type .75s 2.25s steps(20, end) forwards;
+  animation: type .75s 2.25s steps(20, end) forwards;
+
+  /* -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+  -moz-animation: type .5s 4.25s steps(20, end) forwards;
+  -o-animation: type .5s 4.25s steps(20, end) forwards;
+  animation: type .5s 4.25s steps(20, end) forwards; */
 }
 
-.command2{
+.cursor2 {
+  -webkit-animation: blink 1s 3.25s 2 forwards;
+  -moz-animation: blink 1s 3.25s 2 forwards;
+  -o-animation: blink 1s 3.25s 2 forwards;
+  animation: blink 1s 3.25s 2 forwards;
+}
+
+
+.line3{
   color: #E09690;
+  -webkit-animation: type .75s 5.5s steps(20, end) forwards;
+  -moz-animation: type .75s 5.5s steps(20, end) forwards;
+  -o-animation: type .75s 5.5s steps(20, end) forwards;
+  animation: type .75s 5.5s steps(20, end) forwards;
+}
+.cursor3 {
+  -webkit-animation: blink 1s 6.25s 1 forwards;
+  -moz-animation: blink 1s 6.25s 1 forwards;
+  -o-animation: blink 1s 6.25s 1 forwards;
+  animation: blink 1s 6.25s 1 forwards;
 }
 
-.cursor4{
+.line3b{
   color: #fff;
+  -webkit-animation: type .75s 5.5s steps(20, end) forwards;
+  -moz-animation: type .75s 5.5s steps(20, end) forwards;
+  -o-animation: type .75s 5.5s steps(20, end) forwards;
+  animation: type .75s 5.5s steps(20, end) forwards;
+}
+.cursor3b {
+  -webkit-animation: blink 1s 6.25s infinite;
+  -moz-animation: blink 1s 6.25s infinite;
+  -o-animation: blink 1s 6.25s infinite;
+  animation: blink 1s 6.25s infinite;
+}
+
+.line4 {
+  color: #fff;
+  -webkit-animation: type .5s 7.25s steps(20, end) forwards;
+  -moz-animation: type .5s 7.25s steps(20, end) forwards;
+  -o-animation: type .5s 7.25s steps(20, end) forwards;
+  animation: type .5s 7.25s steps(20, end) forwards;
+}
+.cursor4 {
+  -webkit-animation: blink 1s 7.5s infinite;
+  -moz-animation: blink 1s 7.5s infinite;
+  -o-animation: blink 1s 7.5s infinite;
+  animation: blink 1s 7.5s infinite;
+}
+
+
+
+@keyframes write-command{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 100%;
+  }
+}
+
+
+
+
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-moz-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-o-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 17em;
+  }
 }

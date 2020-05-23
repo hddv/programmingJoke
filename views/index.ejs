@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <form action="/custom" method="POST">
+    <form action="/" method="GET">
       <div class="static">
         <!-- <a href="/"><div>Image Joke</div></a> -->
         <!-- <h1>Programming Joke</h1> -->
@@ -22,18 +22,34 @@
         </div>
 
           <div class="screen">
-            <p class="titleCommand">
+            <p class="line1">
               $ programmingJoke-webApp
+              <span class="cursor1">_</span>
             </p>
 
-            <p class="command1">
-              <%= joke1 %>
-            </p>
-            <p class="command2">
-              <%= joke2 %>
+            <p class="command line2">
+              <%- joke1 %>
+              <span class="cursor2">_</span>
             </p>
 
-            <p class="command3"><span class="cursor4">>_</span></p>
+            <% if (joke2 !== ""){ %>
+            <p class="command line3">
+              <%- joke2 %>
+                <span class="cursor3">_</span>
+            </p>
+
+            <p class="command line4">
+              >
+              <span class="cursor4">_</span>
+            </p>
+            <% } else{%>
+            <p class="command line3b">
+                >
+                <span class="cursor3b">_</span>
+            </p>
+            <% } %>
+
+            
           </div>
 
         </div>
@@ -43,7 +59,9 @@
       
       <div class="dynamic">
 
+        
         <input class="customInput" type="submit" value="NEXT">
+      
 
       </div>
     </form>

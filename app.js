@@ -10,7 +10,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  const url = "https://sv443.net/jokeapi/v2/joke/Programming";
+  const url = "https://sv443.net/jokeapi/v2/joke/Any?idRange=38";
+  //const url = "https://sv443.net/jokeapi/v2/joke/Programming";
 
   https.get(url, function (response) {
 
@@ -69,7 +70,7 @@ app.get("/", function (req, res) {
       const type = dataJson.type;
 
       if (type === "single") {
-        const stringJoke1 = dataJson.joke.replace(/(\n)+/g, '<br><br>');
+        const stringJoke1 = dataJson.joke.replace(/(\n)+/g, '<br><br>').split('\"').join('<br>"');
 
         const htmlJoke1 = "<p class='command line2'>" +
           stringJoke1 + "<span class='cursor2fast'>_</span></p>"+

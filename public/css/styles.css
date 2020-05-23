@@ -89,7 +89,7 @@ a{
   border-bottom-left-radius: 5px; 
   border-bottom-right-radius: 5px;
   padding: 10px 20px;
-  height: 420px;
+  height: 360px;
 }
 
 p{
@@ -326,7 +326,7 @@ p{
   }
 
   .screen{
-    height: 517px;
+    height: 457px;
   }
 }
 
@@ -338,6 +338,6 @@ p{
   }
 
   .screen{
-    height: 662px;
+    height: 602px;
   }
 }

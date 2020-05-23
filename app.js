@@ -28,7 +28,7 @@ app.get("/", function (req, res) {
 
       if (type === "single") {
         res.render("index", {
-          joke1: dataJson.joke.replace(/(\n)+/g, "<br>"),
+          joke1: dataJson.joke.replace(/(\n)+/g, "<br><br>"),
           joke2: ""
         });
       }

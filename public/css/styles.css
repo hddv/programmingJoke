@@ -89,7 +89,7 @@ a{
   border-bottom-left-radius: 5px; 
   border-bottom-right-radius: 5px;
   padding: 10px 20px;
-  height: 470px;
+  height: 480px;
 }
 
 p{
@@ -318,8 +318,14 @@ p{
 
 
 
-@media only screen and (min-height: 700px){
+@media only screen and (min-height: 667px){
   .screen{
-    height: 640px;
+    height: 577px;
+  }
+}
+
+@media only screen and (min-height: 812px){
+  .screen{
+    height: 722px;
   }
 }

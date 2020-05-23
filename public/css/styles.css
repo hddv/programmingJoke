@@ -313,3 +313,13 @@ p{
     width: 18em;
   }
 }
+
+
+
+
+
+@media only screen and (min-height: 700px){
+  .screen{
+    height: 640px;
+  }
+}

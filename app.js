@@ -10,8 +10,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  const url = "https://sv443.net/jokeapi/v2/joke/Any?idRange=38";
-  //const url = "https://sv443.net/jokeapi/v2/joke/Programming";
+  //const url = "https://sv443.net/jokeapi/v2/joke/Any?idRange=38";
+  const url = "https://sv443.net/jokeapi/v2/joke/Programming";
 
   https.get(url, function (response) {
 

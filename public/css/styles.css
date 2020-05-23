@@ -18,11 +18,11 @@ body{
 }
 
 .static{
-  min-height: 85vh;
+  /* min-height: 85vh; */
 }
 
 .dynamic{
-  min-height: 15vh;
+  /* min-height: 15vh; */
   height: 100%;
   /* background-color: rgb(172, 172, 172); */
   background-color: #272727;
@@ -36,7 +36,7 @@ body{
   border-radius: 4px;
   font-family: sans-serif;
   font-size: 1.2rem;
-  bottom: 0;
+  /* top: 0; */
 }
 
 .buttonArea{
@@ -93,7 +93,7 @@ a{
 }
 
 p{
-  line-height: 1.2rem;
+  line-height: 1rem;
   font-size: 0.8rem;
   white-space: normal;
   text-align: left;
@@ -321,7 +321,7 @@ p{
 @media only screen and (min-height: 667px){
 
   p{
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     font-size: 1rem;
   }
 
@@ -340,4 +340,8 @@ p{
   .screen{
     height: 602px;
   }
+
+  /* .customInput{
+    bottom: 0;
+  } */
 }

@@ -87,12 +87,12 @@ a{
   background-color: black;
   border-bottom-left-radius: 5px; 
   border-bottom-right-radius: 5px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   height: 470px;
 }
 
 p{
-   line-height: 1.2rem;
+  line-height: 1.5rem;
   font-size: 1rem;
   white-space: normal;
   text-align: left;
@@ -132,10 +132,10 @@ p{
 .line2{
   color: #CDE169;
 
-  -webkit-animation: type .75s 2.25s steps(20, end) forwards;
-  -moz-animation: type .75s 2.25s steps(20, end) forwards;
-  -o-animation: type .75s 2.25s steps(20, end) forwards;
-  animation: type .75s 2.25s steps(20, end) forwards;
+  -webkit-animation: type .5s 2.25s steps(20, end) forwards;
+  -moz-animation: type .5s 2.25s steps(20, end) forwards;
+  -o-animation: type .5s 2.25s steps(20, end) forwards;
+  animation: type .5s 2.25s steps(20, end) forwards;
 
   /* -webkit-animation: type .5s 4.25s steps(20, end) forwards;
   -moz-animation: type .5s 4.25s steps(20, end) forwards;
@@ -144,53 +144,60 @@ p{
 }
 
 .cursor2 {
-  -webkit-animation: blink 1s 3.25s 2 forwards;
-  -moz-animation: blink 1s 3.25s 2 forwards;
-  -o-animation: blink 1s 3.25s 2 forwards;
-  animation: blink 1s 3.25s 2 forwards;
+  -webkit-animation: blink 1s 3.25s 1 forwards;
+  -moz-animation: blink 1s 3.25s 1 forwards;
+  -o-animation: blink 1s 3.25s 1 forwards;
+  animation: blink 1s 3.25s 1 forwards;
+}
+
+.cursor2fast {
+  -webkit-animation: blink 1s 3.25s 1 forwards;
+  -moz-animation: blink 1s 3.25s 1 forwards;
+  -o-animation: blink 1s 3.25s 1 forwards;
+  animation: blink 1s 3.25s 1 forwards;
 }
 
 
 .line3{
   color: #E09690;
-  -webkit-animation: type .75s 5.5s steps(20, end) forwards;
-  -moz-animation: type .75s 5.5s steps(20, end) forwards;
-  -o-animation: type .75s 5.5s steps(20, end) forwards;
-  animation: type .75s 5.5s steps(20, end) forwards;
+  -webkit-animation: type .5s 4.5s steps(20, end) forwards;
+  -moz-animation: type .5s 4.5s steps(20, end) forwards;
+  -o-animation: type .5s 4.5s steps(20, end) forwards;
+  animation: type .5s 4.5s steps(20, end) forwards;
 }
 .cursor3 {
-  -webkit-animation: blink 1s 6.25s 1 forwards;
-  -moz-animation: blink 1s 6.25s 1 forwards;
-  -o-animation: blink 1s 6.25s 1 forwards;
-  animation: blink 1s 6.25s 1 forwards;
+  -webkit-animation: blink 1s 5.25s 1 forwards;
+  -moz-animation: blink 1s 5.25s 1 forwards;
+  -o-animation: blink 1s 5.25s 1 forwards;
+  animation: blink 1s 5.25s 1 forwards;
 }
 
-.line3b{
+.line3fast{
   color: #fff;
-  -webkit-animation: type .75s 5.5s steps(20, end) forwards;
-  -moz-animation: type .75s 5.5s steps(20, end) forwards;
-  -o-animation: type .75s 5.5s steps(20, end) forwards;
-  animation: type .75s 5.5s steps(20, end) forwards;
+  -webkit-animation: type .5s 4.5s steps(20, end) forwards;
+  -moz-animation: type .5s 4.5s steps(20, end) forwards;
+  -o-animation: type .5s 4.5s steps(20, end) forwards;
+  animation: type .5s 4.5s steps(20, end) forwards;
 }
-.cursor3b {
-  -webkit-animation: blink 1s 6.25s infinite;
-  -moz-animation: blink 1s 6.25s infinite;
-  -o-animation: blink 1s 6.25s infinite;
-  animation: blink 1s 6.25s infinite;
+.cursor3fast {
+  -webkit-animation: blink 1s 5s infinite;
+  -moz-animation: blink 1s 5s infinite;
+  -o-animation: blink 1s 5s infinite;
+  animation: blink 1s 5s infinite;
 }
 
 .line4 {
   color: #fff;
-  -webkit-animation: type .5s 7.25s steps(20, end) forwards;
-  -moz-animation: type .5s 7.25s steps(20, end) forwards;
-  -o-animation: type .5s 7.25s steps(20, end) forwards;
-  animation: type .5s 7.25s steps(20, end) forwards;
+  -webkit-animation: type .5s 6.25s steps(20, end) forwards;
+  -moz-animation: type .5s 6.25s steps(20, end) forwards;
+  -o-animation: type .5s 6.25s steps(20, end) forwards;
+  animation: type .5s 6.25s steps(20, end) forwards;
 }
 .cursor4 {
-  -webkit-animation: blink 1s 7.5s infinite;
-  -moz-animation: blink 1s 7.5s infinite;
-  -o-animation: blink 1s 7.5s infinite;
-  animation: blink 1s 7.5s infinite;
+  -webkit-animation: blink 1s 6.75s infinite;
+  -moz-animation: blink 1s 6.75s infinite;
+  -o-animation: blink 1s 6.75s infinite;
+  animation: blink 1s 6.75s infinite;
 }
 
 
@@ -283,24 +290,24 @@ p{
 
 @-webkit-keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
 
 @-moz-keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
 
 @-o-keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }
 
 @keyframes type {
   to {
-    width: 17em;
+    width: 18em;
   }
 }

@@ -93,8 +93,8 @@ a{
 }
 
 p{
-  line-height: 1.6rem;
-  font-size: 1rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
   white-space: normal;
   text-align: left;
   overflow: hidden; 
@@ -319,12 +319,24 @@ p{
 
 
 @media only screen and (min-height: 667px){
+
+  p{
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+
   .screen{
     height: 517px;
   }
 }
 
 @media only screen and (min-height: 812px){
+
+  p{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+  }
+
   .screen{
     height: 662px;
   }

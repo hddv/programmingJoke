@@ -330,12 +330,26 @@ p{
   }
 }
 
-@media only screen and (min-height: 812px){
+@media only screen and (min-height: 730px){
 
   p{
-    line-height: 1.6rem;
+    line-height: 1.4rem;
     font-size: 1.1rem;
   }
+
+  .screen{
+    height: 520px;
+  }
+
+}
+
+
+@media only screen and (min-height: 812px){
+
+  /* p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  } */
 
   .screen{
     height: 602px;

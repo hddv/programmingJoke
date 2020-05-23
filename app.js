@@ -18,48 +18,7 @@ app.get("/", function (req, res) {
     let body = "";
 
     response.on("data", function (data) {
-
       body += data;
-
-
-
-      // let stringE = "";
-      // try {
-      //   let d = JSON.parse(data);
-      // }
-      // catch (e) {
-      //   console.log(e);
-      //   stringE = e;
-      // }
-      // console.log("before: " + data);
-
-
-      // res.render("index", {joke1 : data, joke2: stringE});
-
-
-
-
-
-      // const dataJson = JSON.parse(data);
-
-      // const type = dataJson.type;
-
-      // if (type === "single") {
-      //   res.render("index", {
-      //     joke1: dataJson.joke.replace(/(\n)+/g, "<br><br>"),
-      //     joke2: ""
-      //   });
-      // }
-      // else if (type === "twopart") {
-      //   res.render("index", {
-      //     joke1: dataJson.setup.replace(/(\n)+/g, "<br>"),
-      //     joke2: dataJson.delivery.replace(/(\n)+/g, "<br>")
-      //   });
-      // }
-      // else {
-      //   console.log("Unknow type of joke");
-      // }
-
     });
 
 
@@ -70,7 +29,9 @@ app.get("/", function (req, res) {
       const type = dataJson.type;
 
       if (type === "single") {
-        const stringJoke1 = dataJson.joke.replace(/(\n)+/g, '<br><br>').split('\"').join('<br>"');
+        let stringJoke1A = dataJson.joke;
+        let indices = getIndicesOf('"', stringJoke1A);
+        let stringJoke1 = addBR(indices, stringJoke1A).replace(/(\n)+/g, '<br>');
 
         const htmlJoke1 = "<p class='command line2'>" +
           stringJoke1 + "<span class='cursor2fast'>_</span></p>"+
@@ -114,3 +75,53 @@ app.get("/", function (req, res) {
 app.listen(process.env.PORT || 3000, () => {
   console.log("server ...");
 });
+
+
+
+/* FUNCTIONS */
+
+function getIndicesOf(searchStr, str, caseSensitive) {
+  var searchStrLen = searchStr.length;
+  if (searchStrLen == 0) {
+      return [];
+  }
+  var startIndex = 0, index, indices = [];
+  if (!caseSensitive) {
+      str = str.toLowerCase();
+      searchStr = searchStr.toLowerCase();
+  }
+  while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+      indices.push(index);
+      startIndex = index + searchStrLen;
+  }
+  return indices;
+}
+
+
+
+String.prototype.splice = function(idx, rem, str) {
+  return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+};
+
+
+
+function addBR(array, str) {
+  if(array.length % 2 === 0){
+    let result = str;
+    let buffer = 0;
+
+    for(let i = 0; i < array.length; i++){
+      if(i % 2 === 0){
+        result = result.splice(array[i]+buffer, 0, '<br>');
+      }
+      else{
+        result = result.splice(array[i]+buffer+1, 0, '<br>'); 
+      }
+      buffer += 4;
+    }
+    return result;
+  }
+  else{
+    return str;
+  }
+};

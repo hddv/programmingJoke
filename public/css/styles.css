@@ -17,14 +17,9 @@ body{
   position: relative;
 }
 
-.static{
-  /* min-height: 85vh; */
-}
 
 .dynamic{
-  /* min-height: 15vh; */
   height: 100%;
-  /* background-color: rgb(172, 172, 172); */
   background-color: #272727;
   text-align: center;
 }
@@ -36,7 +31,6 @@ body{
   border-radius: 4px;
   font-family: sans-serif;
   font-size: 1.2rem;
-  /* top: 0; */
 }
 
 .buttonArea{
@@ -105,20 +99,10 @@ p{
   width: 0;
 }
 
-.command{
-  /* width: 0%; */
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-  /* animation: write-command 5s both; */
-}
 
 .line1{
   color: #9CD9F0;
   width: 100%;
-  /* -webkit-animation: type .5s 1s steps(20, end) forwards;
-  -moz-animation: type .5s 1s steps(20, end) forwards;
-  -o-animation: type .5s 1s steps(20, end) forwards;
-  animation: type .5s 1s steps(20, end) forwards; */
 }
 
 .cursor1 {
@@ -126,10 +110,6 @@ p{
   -moz-animation: blink 1s .5s 1 forwards;
   -o-animation: blink 1s .5s 1 forwards;
   animation: blink 1s .5s 1 forwards;
-  /* -webkit-animation: blink 1s 2s 2 forwards;
-  -moz-animation: blink 1s 2s 2 forwards;
-  -o-animation: blink 1s 2s 2 forwards;
-  animation: blink 1s 2s 2 forwards; */
 }
 
 .line2{
@@ -139,11 +119,6 @@ p{
   -moz-animation: type .5s 1.75s steps(20, end) forwards;
   -o-animation: type .5s 1.75s steps(20, end) forwards;
   animation: type .5s 1.75s steps(20, end) forwards;
-
-  /* -webkit-animation: type .5s 4.25s steps(20, end) forwards;
-  -moz-animation: type .5s 4.25s steps(20, end) forwards;
-  -o-animation: type .5s 4.25s steps(20, end) forwards;
-  animation: type .5s 4.25s steps(20, end) forwards; */
 }
 
 .cursor2 {

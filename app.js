@@ -17,7 +17,6 @@ app.get("/", function (req, res) {
 
   const url = "https://sv443.net/jokeapi/v2/joke/Any?idRange="+indexJoke;
   //const url = "https://sv443.net/jokeapi/v2/joke/Programming";
-  console.log(url);
 
   https.get(url, function (response) {
 

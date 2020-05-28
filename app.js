@@ -9,9 +9,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
+let indexJoke = 1;
+
 app.get("/", function (req, res) {
-  //const url = "https://sv443.net/jokeapi/v2/joke/Any?idRange=38";
-  const url = "https://sv443.net/jokeapi/v2/joke/Programming";
+
+  if(indexJoke > 58){ indexJoke = 1;}
+
+  const url = "https://sv443.net/jokeapi/v2/joke/Any?idRange="+indexJoke;
+  //const url = "https://sv443.net/jokeapi/v2/joke/Programming";
+  console.log(url);
 
   https.get(url, function (response) {
 
@@ -41,6 +47,8 @@ app.get("/", function (req, res) {
           joke1: htmlJoke1,
           joke2: ""
         });
+
+        indexJoke++;
       }
       else if (type === "twopart") {
         const stringJoke1 = dataJson.setup.replace(/(\n)+/g, '<br><br>');
@@ -58,6 +66,8 @@ app.get("/", function (req, res) {
           joke1: htmlJoke1,
           joke2: htmlJoke2
         });
+
+        indexJoke++;
       }
       else {
         console.log("Unknow type of joke");
